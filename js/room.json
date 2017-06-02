@@ -1,0 +1,30 @@
+{
+  "name": "mainRoom",
+  "src": "./img/room.jpg",
+  "subRoom": [
+    {
+      "name": "room1",
+      "position": [0,0,-4],
+      "rotation": [0,0,0],
+      "src": "./img/1.jpg"
+    },
+    {
+      "name": "room2",
+      "position": [6,0,0],
+      "rotation": [0,-90,0],
+      "src": "./img/2.jpg"
+    },
+    {
+      "name": "room3",
+      "position": [0,0,4],
+      "rotation": [0,180,0],
+      "src": "./img/3.jpg"
+    },
+    {
+      "name": "room4",
+      "position": [-6,0,0],
+      "rotation": [0,90,0],
+      "src": "./img/4.jpg"
+    }
+  ]
+}

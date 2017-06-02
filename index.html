@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vr_room_display</title>
+    <!--vr框架，需要预先加载才可以解析标签-->
+    <script src="./js/aframe.js"></script>
+</head>
+<body>
+<!--场景-->
+<a-scene>
+    <!--背景图片-->
+    <a-sky src="" rotation="0 0 0" id="vr-background"></a-sky>
+    <!--文字容器-->
+    <a-entity class="dir-content">
+    </a-entity>
+    <!-- 带光标的视角镜头 -->
+    <a-entity>
+        <a-entity camera look-controls wasd-controls>
+            <!-- Cursor should only interact with .box class entities -->
+            <a-entity cursor id="cursor"
+                      geometry="primitive: ring; radiusOuter: 0.015;
+                              radiusInner: 0.01; segmentsTheta: 32"
+                      material="color: white; shader: flat"
+                      position="0 0 -0.75">
+            </a-entity>
+        </a-entity>
+    </a-entity>
+</a-scene>
+<!--script-->
+<script src="./js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>
